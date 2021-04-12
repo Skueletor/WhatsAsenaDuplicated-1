@@ -34,24 +34,7 @@ Asena.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async
             message.jid, 
             fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/VID-20210228-WA0022.mp4"),
             MessageType.video, 
-            { mimetype: Mimetype.mpeg, caption: "```WhatsAsena Founder Selo İçin Çalışıyor!```\n\n*Version:* 0.23.7 - Dev\n*Grade:* Founder\n*AIPackages:* Xteam / Eva / DeepAI / WhatsAsena / RTDA\n*DeepAI Version:* ```1.0.17```\n*XTeam Verison:* ```4.2```" }
-        )
-    }
-    else if (Config.ALIVEMSG == 'EMO') {
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/ezgif-7-0bd4f49fd28c.mp4"),
-            MessageType.video, 
-            { mimetype: Mimetype.mpeg, caption: "```Bu Kalp Birtek Sana Atıyor 🖤```" }
-        )
-    }
-
-    else if (Config.ALIVEMSG == 'EMOC') {
-        await message.client.sendMessage(
-            message.jid, 
-            fs.readFileSync("/root/WhatsAsenaDuplicated/media/gif/4_5935988232951957622.mp4"),
-            MessageType.video, 
-            { mimetype: Mimetype.gif, caption: "```WhatsAsena Founder Emoc İçin Çalışıyor!```\n\n*Version:* ```0.25.2 - Dev```\n*Grade:* ```Moderator```\n*AI Packages:* ```Xteam / Eva / DeepAI / WhatsAsena / RTDA```\n*DeepAI Version:* ```1.0.17```\n*XTeam Verison:* ```4.4```" }
+            { mimetype: Mimetype.mpeg, caption: "```WhatsAsena Founder SELO 💑 ZEYNO İçin Çalışıyor!```\n\n*Version:* 0.27.9 - Dev\n*Grade:* Founder\n*AIPackages:* Xteam / Eva / DeepAI / WhatsAsena / RTDA\n*DeepAI Version:* ```1.0.17```\n*XTeam Verison:* ```4.2```" }
         )
     }
     else {
