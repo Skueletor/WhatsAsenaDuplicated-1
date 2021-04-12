@@ -13,7 +13,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const Language = require('../language');
 const Lang = Language.getString('_asena');
 
-Asena.addCommand({pattern: 'asena ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+Asena.addCommand({pattern: 'selo ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
     var CMD_HELP = '';
     if (match[1] === '') {
         Asena.commands.map(
@@ -41,7 +41,7 @@ Asena.addCommand({pattern: 'asena ?(.*)', fromMe: true, dontAddCommandList: true
         );
         
         await message.client.sendMessage(
-            message.jid,'●▬▬▬ *WhatsAsena Founder Edition* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+            message.jid,'●▬▬▬ *SELO 💑 ZEYNO* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
         );    
     } else {
         var CMD_HELP = '';
@@ -72,7 +72,7 @@ Asena.addCommand({pattern: 'asena ?(.*)', fromMe: true, dontAddCommandList: true
         );
         if (CMD_HELP === '') CMD_HELP += Lang.NOT_FOUND;
         await message.client.sendMessage(
-            message.jid,'●▬▬▬ *WhatsAsena Founder Edition* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
+            message.jid,'●▬▬▬ *SELO 💑 ZEYNO* ▬▬▬●\n\n' + CMD_HELP, MessageType.text
         );
     }
 }));
