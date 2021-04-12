@@ -38,7 +38,7 @@ Asena.addCommand({pattern: 'slo', fromMe: true, desc: Lang.ALIVE_DESC}, (async (
         )
     }
     else {
-        await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*Powered by WhatsAsena*', MessageType.text);
+        await message.client.sendMessage(message.jid,Config.ALIVEMSG + '\n*SELO 💑 ZEYNO*', MessageType.text);
     }
 }));
 
