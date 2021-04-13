@@ -207,11 +207,41 @@ Asena.addCommand({ pattern: 'candyttp ?(.*)', fromMe: true, desc: GW }, (async (
 
 }));
 
-Asena.addCommand({ pattern: 'ttp ?(.*)', fromMe: true, desc: GW }, (async (message, match) => {
+Asena.addCommand({ pattern: 'sandttp ?(.*)', fromMe: true, desc: Lang.HARRY_DESC }, (async (message, match) => {
 
     if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
 
-    var ttinullimage = await axios.get(`https://videfikri.com/api/textmaker/coffeecup2/?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}`, { responseType: 'arraybuffer' })
+    var ttinullimage = await axios.get(`https://api.xteam.xyz/textpro/summerysandwriting?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'SELO 💑 ZEYNO' })
+
+}));
+
+Asena.addCommand({ pattern: 'skyttp ?(.*)', fromMe: true, desc: Lang.HARRY_DESC }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.xteam.xyz/textpro/cloudsky?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'SELO 💑 ZEYNO' })
+
+}));
+
+Asena.addCommand({ pattern: 'snowttp ?(.*)', fromMe: true, desc: Lang.HARRY_DESC }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.xteam.xyz/textpro/snowtext?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
+
+    await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'SELO 💑 ZEYNO' })
+
+}));
+
+Asena.addCommand({ pattern: 'textttp ?(.*)', fromMe: true, desc: Lang.HARRY_DESC }, (async (message, match) => {
+
+    if (match[1] === '') return await message.sendMessage(Lang.NEED_WORD);
+
+    var ttinullimage = await axios.get(`https://api.xteam.xyz/textpro/cloudtext?text=${match[1].replace(/Ö/g, "%C3%96").replace(/ö/g, "%C3%B6").replace(/ü/g, "%C3%BC").replace(/Ü/g, "%C3%9C").replace(/Ğ/g, "%C4%9E").replace(/ğ/g, "%C4%9F").replace(/ş/g, "%C5%9F").replace(/Ş/g, "%C5%9E").replace(/ç/g, "%C3%A7").replace(/Ç/g, "%C3%87").replace(/ı/g, "%C4%B1").replace(/i/g, "%69").replace(/"/g, "%22").replace(/İ/g, "%C4%B0")}&APIKEY=e67bd1bafe81b611`, { responseType: 'arraybuffer' })
 
     await message.sendMessage(Buffer.from(ttinullimage.data), MessageType.image, { mimetype: Mimetype.jpg, caption: 'SELO 💑 ZEYNO' })
 
